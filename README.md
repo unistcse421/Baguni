@@ -12,3 +12,4 @@ Payment and authentication at the same time (by using transportation card)
 We love Bongoose rice burger and McDonalds great hamburger but they doesn’t deliver the foods. Sometimes we need Emart products. However, they are too far from the campus. It is too inefficient to visit there. Some students posted their advertisement on Facebook but it is not continuous delivery service. What if there is some awesome platform for deliverer and consumers?
 
 The answer is BAGUNI!
+
