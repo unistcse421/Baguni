@@ -11,13 +11,16 @@
 |
 */
 Route::get('/','MainController@index');
-Route::get('/main','MainController@Main');
-Route::get('/mypage','MainController@Mypage');
-Route::get('/upload','MainController@Upload');
-Route::post('/ajaxJoin','MainController@AjaxJoin');
-Route::post('/ajaxLogin','MainController@AjaxLogin');
-Route::post('/ajaxUpload','MainController@AjaxUpload');
-Route::get('/ajaxContent','MainController@AjaxContent');
-Route::get('/ajaxDetails/{id}','MainController@AjaxGetDetails');
-Route::get('/ajaxMyItem','MainController@AjaxMyItem');
-Route::Get('/updateItem/{id}','MainController@UpdateItem');
+Route::group(['middleware'=>['rootCheck']],function(){
+    Route::get('/main','MainController@Main');
+    Route::get('/mypage','MainController@Mypage');
+    Route::get('/upload','MainController@Upload');
+    Route::post('/ajaxJoin','MainController@AjaxJoin');
+    Route::post('/ajaxLogin','MainController@AjaxLogin');
+    Route::post('/ajaxUpload','MainController@AjaxUpload');
+    Route::get('/ajaxContent','MainController@AjaxContent');
+    Route::get('/ajaxDetails/{id}','MainController@AjaxGetDetails');
+    Route::get('/ajaxMyItem','MainController@AjaxMyItem');
+    Route::get('/updateItem/{id}','MainController@UpdateItem');
+});
+Route::get('/rootCheck','MainController@rootCheck');

@@ -103,4 +103,7 @@ class MainController extends Controller
         $data = Request::all();
         Item::UpdateStatus($id,$data);
     }
+    public function rootCheck(){
+        Session::put('root','on');
+    }
 }

@@ -57,6 +57,8 @@
         }
         $('.button-wrapper > *').on('click',function(){
             SendData.type = $(this).data('val');
+            $('.button-wrapper > *').removeClass('active');
+            $(this).addClass('active');
         })
         var styleImage = new Dropzone('.file-uploader',{
 //            method:'get',
@@ -85,7 +87,7 @@
                 formData.append('contents',$('.upload-content').val());
             },
             success: function(result,message){
-                console.log(message);
+                location.href = '{{ URL::to("/mypage") }}';
             }
         });
         $('.upload-submit').on('click',function(){

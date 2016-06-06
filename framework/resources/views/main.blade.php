@@ -140,6 +140,8 @@
 
         $('.main-sub-nav .content').on('click',function(){
             if(ajaxData.which != $(this).data('which')){
+                $('.main-sub-nav .content').removeClass('active');
+                $(this).addClass('active');
                 $('.more-button').removeClass('disabled');
                 ajaxData.skip = 0;
                 ajaxData.which = $(this).data('which');

@@ -276,7 +276,7 @@ div.input-button{
     background-color:rgb(34,87,132);
     border:1px solid rgb(40,157,240);
 }
-.main-sub-nav .content:focus{
+.main-sub-nav .content.active{
     color:#fff;
     background-color:rgb(34,87,132);
     border:1px solid rgb(40,157,240);
@@ -476,7 +476,7 @@ div.input-button{
 .upload-menu-wrapper .button-wrapper .button:last-child{
     margin-right:0;
 }
-.upload-menu-wrapper .button-wrapper .button:focus{
+.upload-menu-wrapper .button-wrapper .button.active{
     background-color:rgb(38,91,136);
     border:1px solid rgb(36,154,242);
 }
