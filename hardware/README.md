@@ -5,6 +5,9 @@ Here is a hardware part of the Baguni. The paper-box shaped prototype provides j
 (TBA)
 
 ## Dependency
+- Target Device: Raspberry Pi 2
+- Library: python3-rpi-gpio
+
 Since we will use out-of-dated device, here is some dependency issue.
 - Target Device: KTTech EV-S100 (Android Gingerbread device)
 - Development Environment: Processing-3.0a11 with AndroidMode-0239
